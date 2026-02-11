@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You've Got Mail! 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Envelope -->
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter" id="letter">
+                    <!-- Initial Card Content -->
+                    <div class="card-content active" id="questionCard">
+                        <div class="heart-emoji">💌</div>
+                        <p class="message">
+                            Hey! I wanted to ask you something special... 💕
+                        </p>
+                        <h1>Will you be my Valentine?</h1>
+                        <div class="button-container">
+                            <button class="btn-yes" onclick="sayYes()">Yes! 💖</button>
+                            <button class="btn-no" id="btnNo" onmouseover="runAway(event)">No</button>
+                        </div>
+                    </div>
+
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage">
+                        <h2>Yay! 💕</h2>
+                        <p>I knew you'd say yes :3! Happy Valentine's Day! 💖</p>
+                    </div>
+                </div>
+            </div>
+            <div class="click-hint">✨ Click to open! ✨</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
